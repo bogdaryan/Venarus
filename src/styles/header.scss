@@ -1,0 +1,15 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 38px !important;
+
+	.icons {
+		display: flex;
+		gap: 50px;
+
+		img,
+		svg {
+			cursor: pointer;
+		}
+	}
+}

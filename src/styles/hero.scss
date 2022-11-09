@@ -1,0 +1,56 @@
+.section_hero {
+	height: 80vh;
+	position: relative;
+
+	video {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%) scaleX(1.5) scaleY(1.2);
+		z-index: -999;
+	}
+
+	.container_hero {
+		display: flex;
+		height: inherit;
+
+		.left_section {
+			width: fit-content;
+			height: inherit;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			h1 {
+				font-family: 'Merriweather';
+				color: black;
+				font-size: 55px;
+				font-weight: 700;
+				margin-top: 68px;
+			}
+
+			.links {
+				color: #590D56;
+				font-family: 'Roboto';
+				font-weight: 400;
+				font-size: 18px;
+
+				ul {
+					width: fit-content;
+					display: grid;
+					gap: 32px;
+
+					a {
+						text-decoration: underline;
+
+						li {
+							display: flex;
+							align-items: center;
+							gap: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
