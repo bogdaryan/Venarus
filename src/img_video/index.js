@@ -9,6 +9,8 @@ import front_box from '@assets/front-box.png'
 import left_box from '@assets/left-box.png'
 import right_box from '@assets/right-box.png'
 import squares from '@assets/squares.svg'
+import prev_arrow from '@assets/prev-arrow.svg'
+import next_arrow from '@assets//next-arrow.svg'
 
 export {
 	search,
@@ -22,5 +24,7 @@ export {
 	left_box,
 	right_box,
 	squares,
+	prev_arrow,
+	next_arrow
 
 }
