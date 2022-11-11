@@ -8,6 +8,7 @@ header {
 html {
 	overflow-x: hidden;
 	font-family: 'Roboto', 'Merriweather', serif;
+	// padding-bottom: 500px;
 }
 
 a {
@@ -15,6 +16,25 @@ a {
 	text-decoration: none;
 }
 
-// body {
-// font-family: 'Merriweather', serif;
-// }
+.h1_section_title {
+	font-family: 'Merriweather';
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	color: #000000;
+}
+
+.subtitle {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #777777
+}
+
+.hide {
+	visibility: hidden !important;
+	opacity: 0 !important;
+	transition: .3s ease-in-out;
+}

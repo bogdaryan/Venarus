@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Ticker extends React.PureComponent {
+export default class Marquee extends React.PureComponent {
 
 
 
@@ -15,7 +15,7 @@ export default class Ticker extends React.PureComponent {
 						<li >получить скидку 10% {">>>"} получить скидку 10% {">>>"} получить скидку 10% </li>
 						<li >получить скидку 10% {">>>"} получить скидку 10% {">>>"} получить скидку 10% </li>
 					</ul>
-					<ul class="marquee__content" aria-hidden="true">
+					<ul className="marquee__content" aria-hidden="true">
 						<li >получить скидку 10% {">>>"} получить скидку 10% {">>>"} получить скидку 10% </li>
 						<li >получить скидку 10% {">>>"} получить скидку 10% {">>>"} получить скидку 10% </li>
 						<li >получить скидку 10% {">>>"} получить скидку 10% {">>>"} получить скидку 10% </li>

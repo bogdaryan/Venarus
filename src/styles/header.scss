@@ -3,6 +3,10 @@ header {
 	justify-content: space-between;
 	margin-top: 38px !important;
 
+	.logo {
+		z-index: 999;
+	}
+
 	.icons {
 		display: flex;
 		gap: 50px;
@@ -10,6 +14,15 @@ header {
 		img,
 		svg {
 			cursor: pointer;
+		}
+
+		>svg {
+			z-index: 999;
+
+			path {
+				opacity: 1;
+				transition: .3s ease-in-out;
+			}
 		}
 	}
 }

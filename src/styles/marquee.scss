@@ -25,7 +25,8 @@
 		justify-content: space-around;
 		gap: var(--gap);
 		min-width: 100%;
-		animation: scroll 25s linear infinite;
+		// animation: scroll 40s linear infinite;
+		animation-direction: reverse;
 
 		li {
 			font-family: 'Roboto';

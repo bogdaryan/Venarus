@@ -45,9 +45,6 @@ export default class Slider_Packages extends React.PureComponent {
 						</Swiper>
 
 					</div>
-
-
-
 				</div>
 				<a href='#'>Где купить  {'>'}</a>
 			</section>

@@ -8,13 +8,20 @@
 
 // elements of page //
 @import 'slider_packages.scss';
+@import 'menu.scss';
 //                 //
 
 // pages // 
 @import 'header.scss';
 @import 'hero.scss';
-@import 'ticker.scss';
+@import 'marquee.scss';
+@import 'effects.scss';
+@import 'factory_video.scss';
 //       //
+
+// media //
+@import 'media.scss';
+//        //
 
 // global //
 @import 'global.scss';
