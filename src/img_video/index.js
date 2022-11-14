@@ -12,15 +12,24 @@ import scope_1 from '@assets/scope_1.svg'
 import squares from '@assets/squares.svg'
 import pill_1 from '@assets/pill_1.svg'
 import factory_img from '@assets/factory_img.png'
-import factory_bg_gif from '@assets/factory_bg.gif'
+import factory_1 from '@assets/factory_1.png'
 import factory_bg_svg from '@assets/facroty_bg_svg.svg'
-
 import line_1 from '@assets/line_1.svg'
 import line_2 from '@assets/line_2.svg'
 import line_3 from '@assets/line_3.svg'
 import line_4 from '@assets/line_4.svg'
 import line_5 from '@assets/line_5.svg'
-
+import expert_1 from '@assets/expert_1.png'
+import useful_bg from '@assets/useful_bg.svg'
+import useful_1 from '@assets/useful_1.png'
+import useful_2 from '@assets/useful_2.png'
+import useful_3 from '@assets/useful_3.png'
+import where_buy from '@assets/where_buy.png'
+import vk from '@assets/vk.svg'
+import facebook from '@assets/facebook.svg'
+import twitter from '@assets/twitter.svg'
+import ok from '@assets/ok.svg'
+import prharm from '@assets/prharm.svg'
 
 
 export {
@@ -38,11 +47,22 @@ export {
 	squares,
 	pill_1,
 	factory_img,
-	factory_bg_gif,
+	factory_1,
 	factory_bg_svg,
 	line_1,
 	line_2,
 	line_3,
 	line_4,
-	line_5
+	line_5,
+	expert_1,
+	useful_bg,
+	useful_1,
+	useful_2,
+	useful_3,
+	where_buy,
+	vk,
+	facebook,
+	twitter,
+	ok,
+	prharm
 }

@@ -5,7 +5,6 @@ import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
-
 import {
 	front_box,
 	left_box,
@@ -31,6 +30,7 @@ export default class Slider_Packages extends React.PureComponent {
 							loop={true}
 							modules={[Navigation]}
 							className="mySwiper"
+
 						>
 
 							<SwiperSlide>
@@ -46,7 +46,7 @@ export default class Slider_Packages extends React.PureComponent {
 
 					</div>
 				</div>
-				<a href='#'>Где купить  {'>'}</a>
+				<a className='btn' href='#'>Где купить  {'>'}</a>
 			</section>
 		);
 	}

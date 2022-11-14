@@ -1,14 +1,19 @@
+header,
 section,
-header {
+.wrapper_footer {
 	max-width: 1140px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 30px;
+}
+
+
+html,
+body {
+	overflow-x: hidden;
 }
 
 html {
-	overflow-x: hidden;
 	font-family: 'Roboto', 'Merriweather', serif;
-	// padding-bottom: 500px;
 }
 
 a {
@@ -22,19 +27,56 @@ a {
 	font-size: 30px;
 	line-height: 36px;
 	color: #000000;
+	z-index: 999;
 }
 
-.subtitle {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 25px;
-	color: #777777
+
+.text_effects {
+	display: flex;
+	flex-direction: column;
+	gap: 38px;
+
+	.subtitle {
+		width: max-content;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 25px;
+		color: #777777;
+	}
 }
 
 .hide {
 	visibility: hidden !important;
 	opacity: 0 !important;
 	transition: .3s ease-in-out;
+}
+
+.btn {
+	width: 263px;
+	height: fit-content;
+	text-align: center;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 18px;
+	color: white;
+	border: 1px solid rgb(255, 255, 255);
+	padding: 25px 0;
+	border-radius: 50px;
+	transition: .3s linear;
+	cursor: pointer;
+
+	&:hover {
+		transition: .3s linear;
+		opacity: .7;
+	}
+}
+
+#bg_section {
+	position: absolute;
+	left: 50%;
+	z-index: -999;
+	transform: translateX(-50%) scaleX(1.35) scaleY(1.1);
+
 }

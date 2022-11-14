@@ -1,0 +1,44 @@
+.section_experts {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+
+	.wrapper {
+		width: -webkit-fill-available;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.text_effects {
+		align-self: flex-start;
+	}
+
+	.experts_container {
+		width: 847px;
+
+		.my_swiper_experts {
+			height: calc(100% + 50px);
+			user-select: none;
+
+			.swiper-pagination {
+				width: unset;
+				z-index: 999;
+				display: flex;
+				gap: 15px;
+
+				span {
+					margin: 0;
+					width: 16px;
+					height: 16px;
+					background: transparent;
+					border: 1px solid #590D56;
+				}
+
+				.swiper-pagination-bullet-active {
+					background: #590D56;
+				}
+
+			}
+		}
+	}
+}

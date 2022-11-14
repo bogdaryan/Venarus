@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { factory_img, factory_bg_svg } from "@/img_video";
+import { factory_img, factory_bg_svg, factory_1 } from "@/img_video";
+import classnames from 'classnames'
+
 
 export default function Factory_Video() {
 
@@ -16,72 +18,54 @@ export default function Factory_Video() {
 
 	function next_slide() {
 
+		arr_items[0].classList.remove('active')
+		arr_items[0].classList.add("transform")
 
-		const el_1 = arr_items[0].classList.contains("active")
-		const el_2 = arr_items[1].classList.contains("active")
-
-
-		if (el_1) {
-			arr_items[0].classList.remove('active')
-			arr_items[0].classList.add("transform")
-
-			arr_items[1].classList.add("active")
-			arr_items[1].classList.remove('transform')
-
-		} else if (el_2) {
-			arr_items[1].classList.remove('active')
-			arr_items[1].classList.add("transform")
-
-			arr_items[2].classList.add("active")
-			arr_items[2].classList.remove('transform')
-		}
-
+		arr_items[1].classList.add("active")
+		arr_items[1].classList.remove('transform')
 
 	}
 
 
-
 	function prev_slide() {
 
-		// arr_items.map((item, index) => {
-		// 	index = index + 1
+		arr_items[1].classList.remove('active')
+		arr_items[1].classList.add("transform")
 
-		// 	if (!item.classList.contains('item_currect')) { return }
-
-		// 	item.classList.remove('item_slider')
-		// 	item.classList.add("item_currect")
-		// })
+		arr_items[0].classList.add("active")
+		arr_items[0].classList.remove('transform')
 
 	}
 
 	return (
 		<section className="section_factory" >
-			<img id="bg_section_factory" src={factory_bg_svg} alt="" />
+			<img id="bg_section" src={factory_bg_svg} alt="" />
 
 
 			<div className="container_factory">
 				<h1 className="h1_section_title" >О производстве <br /> Венарус</h1>
 
-				<div className="wrapper">
-					<div className="window">
+				<div className="right_block" >
+					<div className="wrapper">
+						<div className="container_slides">
 
+							<div className='item active '  >
+								<img src={factory_img} />
+							</div>
+							<div className="item  transform" >
+								<img src={factory_1} />
+							</div>
 
-						<div className="item  active" >
-							<img src={factory_img} />
 						</div>
-						<div className="item  transform" >
-							<img src={factory_img} />
+						<div className="navigation" >
+							<div onClick={prev_slide} className="btn_prev" ></div>
+							<div onClick={next_slide} className="btn_next" ></div>
 						</div>
-						<div className="item  transform" >
-							<img src={factory_img} />
-						</div>
-
-
 					</div>
-					<div className="navigation" >
-						<div onClick={prev_slide} className="btn_prev" ></div>
-						<div onClick={next_slide} className="btn_next" ></div>
-					</div>
+
+					<a className="btn" > Подробнее {">"} </a>
+
+
 				</div>
 
 			</div>

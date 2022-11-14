@@ -7,7 +7,7 @@ export default class Marquee extends React.PureComponent {
 
 	render() {
 		return (
-			<section className="ticker_section" >
+			<section className="marquee_section" >
 				<div className="marquee " >
 					<ul className="marquee__content" >
 						<li >получить скидку 10% {">>>"} получить скидку 10% {">>>"} получить скидку 10% </li>

@@ -27,6 +27,7 @@
 
 			.i {
 				position: relative;
+				transform: translate(8px, 11px);
 
 				&:hover .hover_cloud {
 					opacity: 1;
@@ -37,7 +38,6 @@
 				svg {
 					width: 25px;
 					height: 25px;
-					transform: translate(8px, 11px);
 					fill: #590D56;
 				}
 
@@ -68,15 +68,6 @@
 	display: flex;
 	justify-content: space-between;
 
-	.text_effects {
-		display: flex;
-		flex-direction: column;
-		gap: 38px;
-
-		p {
-			width: max-content;
-		}
-	}
 
 	.effects_continer {
 		width: -webkit-fill-available;
@@ -171,8 +162,4 @@
 
 		}
 	}
-}
-
-@media only screen and (max-width: 1270px) {
-	.section_some_info ul .hover_info .i .hover_cloud {}
 }

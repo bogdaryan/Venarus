@@ -10,10 +10,12 @@
 	align-items: center;
 	max-width: unset;
 	transition: .3s ease-in-out;
+	overflow: hidden;
 
 	.container_menu {
 		width: 1140px;
 		margin: 0 auto;
+		padding: 0 20px;
 
 		>nav {
 			ul {

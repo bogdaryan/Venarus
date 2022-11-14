@@ -1,0 +1,50 @@
+.section_where_buy {
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.wrapper {
+		width: -webkit-fill-available;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		top: 100px;
+
+		.right_block {
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+
+			img {
+				width: fit-content;
+				align-self: center;
+				transition: .2s linear;
+
+				&:hover {
+					transform: translateY(-10px);
+					transition: .2s linear;
+				}
+			}
+
+			.links {
+				display: flex;
+				gap: 30px;
+
+				.btn {
+					color: #47093E;
+					border: 1px solid #47093E;
+					transition: .2s linear;
+
+					&:hover {
+						background: #47093E;
+						color: white;
+						transition: .2s linear;
+						opacity: unset;
+					}
+				}
+			}
+		}
+	}
+}

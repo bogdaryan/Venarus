@@ -78,23 +78,10 @@
 		}
 	}
 
-	a {
-		font-family: 'Roboto';
-		font-weight: 400;
-		font-size: 18px;
-		color: white;
-		border: 2px solid rgb(255, 255, 255);
-		padding: 25px 90px;
-		border-radius: 50px;
-		position: absolute;
-		bottom: 55px;
-		left: 50%;
-		transform: translateX(-43%);
-		transition: .3s linear;
-
-		&:hover {
-			transition: .3s linear;
-			opacity: .7;
-		}
+	>.btn {
+		position: relative;
+		top: 50px;
+		left: 20px;
 	}
+
 }

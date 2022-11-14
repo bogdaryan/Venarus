@@ -5,10 +5,26 @@ import Menu from "@/components/Menu/Menu.jsx";
 
 
 export default function Header() {
+	const html = document.getElementsByTagName('html')[0]
+	const body = document.getElementsByTagName('body')[0]
+
 	const [is_hide, set_visibility] = useState(true)
 
 	function toggle_menu() {
 		set_visibility(is_hide => !is_hide)
+		html.style.overflowY = 'hidden'
+		html.style.paddingRight = '17px'
+
+		body.style.overflowY = 'hidden'
+
+		if (!is_hide) {
+			html.style.overflowY = ''
+			html.style.paddingRight = '0'
+
+			body.style.overflowY = ''
+
+		}
+
 	}
 
 	return (
